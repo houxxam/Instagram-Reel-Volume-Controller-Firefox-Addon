@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "Volume Changer",
+    "version": "1.0",
+    "description": "A simple example extension.",
+    "icons": {
+      "48": "icon.png"
+    },
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "permissions": [
+      "activeTab"
+    ],
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.instagram.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  

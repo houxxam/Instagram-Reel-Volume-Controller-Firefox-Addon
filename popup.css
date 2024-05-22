@@ -1,0 +1,13 @@
+body {
+  width: 200px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+input[type="range"] {
+  width: 100%;
+}
